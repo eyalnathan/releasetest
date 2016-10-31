@@ -7,7 +7,7 @@
 		"layer": "vendor",
 		"i18n": "",
 		"description": "",
-		"title": "marketingsite"
+		"title": "Marketing Site"
 	},
 	"payload": {
 		"homeApp": {
@@ -33,19 +33,20 @@
 		},
 		"sap.cloud.portal": {
 			"_version": "1.2.0",
-			"availablePageTemplates": [{
-				"namespace": "",
-				"id": "hcp://marketingsitetemplate/marketingsite/pageTemplates/template1/manifest.json"
-			}, {
-				"namespace": "",
-				"id": "hcp://marketingsitetemplate/marketingsite/pageTemplates/template2/manifest.json"
-			}, {
-				"namespace": "",
-				"id": "hcp://marketingsitetemplate/marketingsite/pageTemplates/template3/manifest.json"
-			}, {
-				"namespace": "",
-				"id": "hcp://marketingsitetemplate/marketingsite/pageTemplates/template4/manifest.json"
-			}],
+			"availablePageTemplates": [
+				{
+					"namespace": "",
+					"id": "hcp://marketingsitetemplate/marketingsite/pageTemplates/template1/manifest.json"
+				},
+				{
+					"namespace": "",
+					"id": "hcp://marketingsitetemplate/marketingsite/pageTemplates/template2/manifest.json"
+				},
+				{
+					"namespace": "",
+					"id": "hcp://marketingsitetemplate/marketingsite/pageTemplates/template3/manifest.json"
+				}
+			],
 			"config": {
 				"icon": "marketingsitetemplate/marketingsite/thumbnail.jpg"
 			}
