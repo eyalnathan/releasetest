@@ -18,6 +18,5 @@
       },
       "description": "Basic Authentication destination to C4C backends"
     }
-  ],
-  "authenticationMethod": "none"
+  ]
 }
