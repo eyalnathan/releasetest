@@ -66,10 +66,6 @@
     padding-bottom: 4px;
 }
 
-.editableForm .sapMRb > .sapMLabel {
-    max-width: 100%;
-}
-
 .ddbStyle{
     min-width: 100%!important;
 }
@@ -77,13 +73,4 @@
 #appRegistrationView--pageRegWizard-cont{
     overflow-x: hidden;
     overflow-y: hidden !important;
-}
-
-#appRegistrationView--wizardContent{
-position: absolute;
-top: 5rem;
-bottom: 0rem;
-left: 0;
-right: 0;
-height: auto;
 }

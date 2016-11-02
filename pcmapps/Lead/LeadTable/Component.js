@@ -40,9 +40,9 @@ sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/model/odata/ODataUtils"], func
 		},
 
 		utils: {
-			getQueryById: function(eQueryId, queries) {
+			getQueryById: function(queryId, queries) {
 				var i;
-				var queryId = eQueryId || "defaultQuery";
+				queryId = queryId || "defaultQuery";
 
 				for (i = 0; i < queries.length; i++) {
 					if (queryId === queries[i].id) {
@@ -52,12 +52,12 @@ sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/model/odata/ODataUtils"], func
 				return this.getDefaultQuery(queries);
 			},
 
-			getQueryByName: function(eQueryName, queries) {
+			getQueryByName: function(queryName, queries) {
 				var i;
 				if (!queries || queries === "undefined" || queries.length === 0) {
 					return null;
 				}
-				var queryName = eQueryName || this.getDefaultQuery(queries).name;
+				queryName = queryName || this.getDefaultQuery(queries).name;
 
 				for (i = 0; i < queries.length; i++) {
 					if (queryName === queries[i].name) {

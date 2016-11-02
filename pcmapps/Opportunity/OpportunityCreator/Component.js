@@ -17,9 +17,9 @@ sap.ui.define(["sap/ui/core/UIComponent"], function(UIComponent) {
 		},
 
 		utils: {
-			getQueryById: function(eQueryId, queries) {
+			getQueryById: function(queryId, queries) {
 				var i;
-				var queryId = eQueryId || "defaultQuery";
+				queryId = queryId || "defaultQuery";
 
 				for (i = 0; i < queries.length; i++) {
 					if (queryId === queries[i].id) {

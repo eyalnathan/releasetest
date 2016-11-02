@@ -1,7 +1,6 @@
 (function() {
 	"use strict";
 	/*global  setTimeout, sap, window*/
-	/*eslint  sap-timeout-usage: 1 */
 	sap.ui.controller("c4c.create-PartnerContactCollection.remote.view.vhelpdialog", {
 
 		/**

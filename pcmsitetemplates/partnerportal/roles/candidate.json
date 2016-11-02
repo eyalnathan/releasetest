@@ -13,6 +13,15 @@
     "groups": [{
       "namespace": "",
       "id": "hcp://pcmsitetemplates/partnerportal/groups/overview.json"
-    }]
+    },
+      {
+        "namespace": "",
+        "id": "hcp://pcmsitetemplates/partnerportal/groups/applications.json"
+      },
+      {
+        "namespace": "",
+        "id": "hcp://pcmsitetemplates/partnerportal/groups/new_transactions.json"
+      }
+    ]
   }
 }

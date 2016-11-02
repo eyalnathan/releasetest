@@ -3,7 +3,6 @@
 	/*global  jQuery, $, sap, window*/
 	jQuery.sap.require("sap.m.MessageBox");
 
-
 	sap.ui.controller("c4c.table-accountcollection.remote.view.table", {
 		C4CoModel: null,
 		targetEntity: null,
@@ -367,8 +366,8 @@
 		 * @memberOf view.c4ctable
 		 * @param item
 		 */
-		setQueryComboBoxSelection: function(eItem) {
-			var item = eItem || window.generalNameSpace.utils.getDefaultQuery(this.queries);
+		setQueryComboBoxSelection: function(item) {
+			item = item || window.generalNameSpace.utils.getDefaultQuery(this.queries);
 			this.getQueryCombobox().setSelectedKey(item);
 		},
 
@@ -549,8 +548,7 @@
 			}
 		},
 
-		formatDate: function(eDate) {
-			var date = eDate;
+		formatDate: function(date) {
 			if (!date) {
 				return "";
 			}
@@ -560,8 +558,7 @@
 			return dateFormat.format(new Date(date));
 		},
 
-		formatTimeDate: function(eDate) {
-			var date = eDate;
+		formatTimeDate: function(date) {
 			if (!date) {
 				return "";
 			}

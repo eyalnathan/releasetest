@@ -71,12 +71,12 @@
 							"x-csrf-token": newToken
 						},
 						contentType: opts.contentType,
-						success: function(oData, oTextStatus, oJqXHR) {
+						success: function(data, textStatus, jqXHR) {
 							window.csrfToken = newToken;
-							opts.successCallback(oData, oTextStatus, oJqXHR);
+							opts.successCallback(data, textStatus, jqXHR);
 						},
-						error: function(oJqXHR, oTextStatus, errorThrown) {
-							opts.errorCallback(oJqXHR, oTextStatus, errorThrown);
+						error: function(jqXHR, textStatus, errorThrown) {
+							opts.errorCallback(jqXHR, textStatus, errorThrown);
 						}
 					});
 					return;

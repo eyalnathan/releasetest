@@ -101,7 +101,7 @@
 				}
 			}
 
-			function getComboBoxesData(eIndex) {
+			function getComboBoxesData(index) {
 
 				var oBD = this.busyDialog;
 				oBD.open();
@@ -132,7 +132,7 @@
 
 						});
 
-						viewData[getComboPath(eIndex)] = collection;
+						viewData[getComboPath(index)] = collection;
 
 						oViewModel.setData(viewData);
 
@@ -263,7 +263,7 @@
 			var fragment = this.getFormView();
 			var input = fragment.$().find(".sapMInputBaseErrorInner");
 			var inputId;
-			input.each(function(t, val) {
+			input.each(function(i, val) {
 				inputId = val.id;
 				inputId = inputId.indexOf("-inner") >= 0 ? inputId.substr(0, inputId.indexOf("-inner")) : inputId;
 				input = sap.ui.getCore().byId(inputId);
@@ -308,22 +308,20 @@
 			var oBD = this.busyDialog;
 			oBD.open();
 
-			$.each(viewData, function(eKey, eValue) {
-				var value = eValue,
-					key = eKey;
+			$.each(viewData, function(key, value) {
 
-				function getMonth(val) {
-					var month = val.getMonth() + 1;
+				function getMonth(value) {
+					var month = value.getMonth() + 1;
 					return month < 10 ? "0" + month : month;
 				}
 
-				function getTime(val) {
-					return val.toTimeString().match(/\d{2}:\d{2}:\d{2}/)[0];
+				function getTime(value) {
+					return value.toTimeString().match(/\d{2}:\d{2}:\d{2}/)[0];
 				}
 
-				function getDateTime(val, timestamp) {
-					var date = val.getFullYear() + "-" + getMonth(val) + "-" + value.getDate();
-					var time = timestamp ? getTime(val) : "00:00:00";
+				function getDateTime(value, timestamp) {
+					var date = value.getFullYear() + "-" + getMonth(value) + "-" + value.getDate();
+					var time = timestamp ? getTime(value) : "00:00:00";
 					return date + "T" + time + ".000";
 				}
 
